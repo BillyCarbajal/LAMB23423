@@ -10,7 +10,7 @@ Y añadimos estas líneas que serán las que indicaran el hostname, sistema inst
 		apache.vm.hostname = "Billy-Apache"
 		apache.vm.box = "generic/debian11"
 		apache.vm.network "public_network"
-		apache.vm.network "private_network", ip:"192.168.100.2", :dev => "eth0",
+		apache.vm.network "private_network", ip:"192.168.100.2",
 			virtualbox__intnet: "priv"
 		apache.vm.provider "virtualbox" do |v|
 			v.memory = 1024
