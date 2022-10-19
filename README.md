@@ -10,26 +10,26 @@ Y añadimos estas líneas que serán las que indicaran el hostname, sistema inst
 > apache.vm.hostname = "Billy-Apache"
 > 
 > apache.vm.box = "generic/debian11"
-		apache.vm.network "public_network"
-		apache.vm.network "private_network", ip:"192.168.100.2", :dev => "eth0",
-			virtualbox__intnet: "priv"
-		apache.vm.provider "virtualbox" do |v|
-			v.memory = 1024
-			v.cpus = 1
-		end
-		apache.vm.provision :shell, privileged:true, path: "script-apache.sh"
-	end
-	config.vm.define "servidor-mysql" do |db|
-		db.vm.hostname = "Billy-mysql"
-		db.vm.box = "generic/debian11"
-		db.vm.network "private_network", ip:"192.168.100.3", 
-			virtualbox__intnet: "priv"
-		db.vm.provider "virtualbox" do |v|
-			v.memory = 1024
-			v.cpus = 1
-		end
-		db.vm.provision :shell, privileged:true, path: "script-sql.sh"
-	end
+> apache.vm.network "public_network"
+> apache.vm.network "private_network", ip:"192.168.100.2", :dev => "eth0",
+> virtualbox__intnet: "priv"
+> apache.vm.provider "virtualbox" do |v|
+> v.memory = 1024
+> v.cpus = 1
+> end
+> apache.vm.provision :shell, privileged:true, path: "script-apache.sh"
+> end
+> config.vm.define "servidor-mysql" do |db|
+> db.vm.hostname = "Billy-mysql"
+> db.vm.box = "generic/debian11"
+> db.vm.network "private_network", ip:"192.168.100.3", 
+> virtualbox__intnet: "priv"
+> db.vm.provider "virtualbox" do |v|
+> v.memory = 1024
+> v.cpus = 1
+> end
+> db.vm.provision :shell, privileged:true, path: "script-sql.sh"
+> end
 
 ### Paso 2. Editamos el script de aprovisionamiento del servidor apache
 	Ahora crearemos en la misma carpeta un archivo llamado "script-apache.sh" en el incluiremos las siguientes lineas:
