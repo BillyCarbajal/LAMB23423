@@ -33,9 +33,9 @@ Y añadimos estas líneas que serán las que indicaran el hostname, sistema inst
 
 ### Paso 2. Editamos el script de aprovisionamiento del servidor apache
 Ahora crearemos en la misma carpeta un archivo llamado "script-apache.sh" en el incluiremos las siguientes lineas:
-- Para actualiza los repositorios del servidor apache:
+- Para actualiza los repositorios del servidor apache: \
 	apt update
-- Instalar los paquetes necesarios en el servidor apache:
+- Instalar los paquetes necesarios en el servidor apache: \
 	apt install apache2 php libapache2-mod-php php-mysql git -y
 - Descargar archivos de configuración para el servidor apache:
 	git clone https://github.com/josejuansanchez/iaw-practica-lamp.git
