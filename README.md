@@ -10,13 +10,13 @@ Y añadimos estas líneas que serán las que indicaran el hostname, sistema inst
 > apache.vm.hostname = "Billy-Apache"
 > 
 > apache.vm.box = "generic/debian11"
-> apache.vm.network "public_network"
-> apache.vm.network "private_network", ip:"192.168.100.2", :dev => "eth0",
-> virtualbox__intnet: "priv"
-> apache.vm.provider "virtualbox" do |v|
-> v.memory = 1024
-> v.cpus = 1
-> end
+`apache.vm.network "public_network"
+ apache.vm.network "private_network", ip:"192.168.100.2", :dev => "eth0",
+ virtualbox__intnet: "priv"
+ apache.vm.provider "virtualbox" do |v|
+ v.memory = 1024
+ v.cpus = 1
+ end`
 > apache.vm.provision :shell, privileged:true, path: "script-apache.sh"
 > end
 > config.vm.define "servidor-mysql" do |db|
