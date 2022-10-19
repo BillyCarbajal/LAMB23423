@@ -65,7 +65,7 @@ Una vez hecho todo esto guardamos el archivo.
 ### Paso 3.  Editamos el script de aprovisionamiento del servidor mysql
 
 Ahora crearemos en la misma carpeta un archivo llamado "script-mysql.sh" en el incluiremos las siguientes lineas:
-- Con esta linea actualizamos los respositorios del servidor mysql:
+- Con esta linea actualizamos los respositorios del servidor mysql: \
 	apt update
 - Con esta linea se instalan los paquetes necesario para el servidor mysql:
 	apt install default-mysql-server git -y
