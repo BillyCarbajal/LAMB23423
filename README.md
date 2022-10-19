@@ -6,7 +6,7 @@ Editamos ese archivo con un editor de texto y eliminamos la siguiente linea:
 
 Y añadimos estas líneas que serán las que indicaran el hostname, sistema instalado, tipo de red, cantidad de memoria RAM, limite de procesadores y la ubicación de sus respectivos script bash de aprovisionamiento de las dos maquinas llamadas "Billy-Apache" y "Billy-mysql".
 
-> config.vm.define "servidor-apache" do |apache| \
+	config.vm.define "servidor-apache" do |apache| \
 apache.vm.hostname = "Billy-Apache" \
 apache.vm.box = "generic/debian11" \
 apache.vm.network "public_network"
