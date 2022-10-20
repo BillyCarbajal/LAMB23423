@@ -122,3 +122,5 @@ Una vez iniciada la sesion ssh ejecutamos el comando "ping 192.168.100.3" desde 
 ![imagen](https://github.com/BillyCarbajal/LAMB23423/blob/main/screencast/Captura%20de%20pantalla%20(1).png)
 
 ![imagen2](https://github.com/BillyCarbajal/LAMB23423/blob/main/screencast/Captura%20de%20pantalla%20(2).png)
+
+use
