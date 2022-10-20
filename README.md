@@ -113,5 +113,6 @@ Una vez hecho todo esto guardamos el archivo.
 ### Paso 4. Comprobar que los servidores funcionan
 Iniciamos una sesion ssh en ambos servidor con el comando "vagrant ssh" mas nombre con el cual hayamos definido la maquina en el vagrant file. En nuestro caso ejecutamos "vagrant ssh servidor-apache" y en otra terminal "vagrant ssh servidor-mysql". Una vez iniciada la sesion ssh ejecutamos el comando "ping 192.168.100.3" desde la maquina servidor-apache para poder comprobar si tenemos conexion con la maquina servidor-mysql.
 
-
 ![imagen](https://github.com/BillyCarbajal/LAMB23423/blob/main/screencast/Captura%20de%20pantalla%20(1).png)
+
+![imagen2](https://github.com/BillyCarbajal/LAMB23423/blob/main/screencast/Captura%20de%20pantalla%20(2).png)
