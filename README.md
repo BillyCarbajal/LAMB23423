@@ -111,7 +111,14 @@ Ahora crearemos en la misma carpeta un archivo llamado "script-mysql.sh" en el i
 Una vez hecho todo esto guardamos el archivo.
 
 ### Paso 4. Comprobar que los servidores funcionan
-Iniciamos una sesion ssh en ambos servidor con el comando "vagrant ssh" mas nombre con el cual hayamos definido la maquina en el vagrant file. En nuestro caso ejecutamos "vagrant ssh servidor-apache" y en otra terminal "vagrant ssh servidor-mysql". Una vez iniciada la sesion ssh ejecutamos el comando "ping 192.168.100.3" desde la maquina servidor-apache para poder comprobar si tenemos conexion con la maquina servidor-mysql.
+Iniciamos una sesion ssh en ambos servidor con el comando "vagrant ssh" mas nombre con el cual hayamos definido la maquina en el vagrant file. En nuestro caso ejecutamos "vagrant ssh servidor-apache" y en otra terminal "vagrant ssh servidor-mysql". \
+En la maquina servidor-apache ejecutamos el comando "sudo service apache2 status" para ver si el servidor apache se esta ejecutando. Y en la maquina servidor-mysql ejecutamos "sudo service mysql status" para ver si el servidor mysql se esta ejecutando.
+
+![image3](https://user-images.githubusercontent.com/116075944/197051338-ec29021b-2122-4c38-b7b7-834cca9b4fc9.png)
+
+
+
+Una vez iniciada la sesion ssh ejecutamos el comando "ping 192.168.100.3" desde la maquina servidor-apache para poder comprobar si tenemos conexion con la maquina servidor-mysql.
 
 ![imagen](https://github.com/BillyCarbajal/LAMB23423/blob/main/screencast/Captura%20de%20pantalla%20(1).png)
 
